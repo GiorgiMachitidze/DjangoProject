@@ -7,6 +7,8 @@ from .models import Book, Author, Category
 class BookAdmin(admin.ModelAdmin):
     search_fields = ('name', 'author_name')
 
+    
+
 @admin.register(Author)
 class AuthorAdmin(admin.ModelAdmin):
     list_display = ['first_name', 'last_name']
